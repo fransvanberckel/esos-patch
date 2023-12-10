@@ -1,0 +1,65 @@
+--- linux-5.4.229.config	2023-10-30 14:24:13.929106086 +0100
++++ linux-5.4.229_mcp55.config	2023-10-30 13:58:13.655129560 +0100
+@@ -21,7 +21,7 @@
+ #
+ CONFIG_INIT_ENV_ARG_LIMIT=32
+ # CONFIG_COMPILE_TEST is not set
+-CONFIG_LOCALVERSION=""
++CONFIG_LOCALVERSION="-esos.prod"
+ # CONFIG_LOCALVERSION_AUTO is not set
+ CONFIG_BUILD_SALT=""
+ CONFIG_HAVE_KERNEL_GZIP=y
+@@ -1790,7 +1790,7 @@
+ # CONFIG_SATA_AHCI_PLATFORM is not set
+ # CONFIG_SATA_INIC162X is not set
+ # CONFIG_SATA_ACARD_AHCI is not set
+-# CONFIG_SATA_SIL24 is not set
++CONFIG_SATA_SIL24=y
+ CONFIG_ATA_SFF=y
+ 
+ #
+@@ -1807,7 +1807,7 @@
+ CONFIG_ATA_PIIX=y
+ # CONFIG_SATA_DWC is not set
+ # CONFIG_SATA_MV is not set
+-# CONFIG_SATA_NV is not set
++CONFIG_SATA_NV=y
+ # CONFIG_SATA_PROMISE is not set
+ # CONFIG_SATA_SIL is not set
+ # CONFIG_SATA_SIS is not set
+@@ -1866,7 +1866,7 @@
+ # Generic fallback / legacy drivers
+ #
+ # CONFIG_PATA_ACPI is not set
+-# CONFIG_ATA_GENERIC is not set
++CONFIG_ATA_GENERIC=y
+ # CONFIG_PATA_LEGACY is not set
+ CONFIG_MD=y
+ CONFIG_BLK_DEV_MD=y
+@@ -2128,7 +2128,7 @@
+ CONFIG_NET_VENDOR_8390=y
+ # CONFIG_NE2K_PCI is not set
+ CONFIG_NET_VENDOR_NVIDIA=y
+-# CONFIG_FORCEDETH is not set
++CONFIG_FORCEDETH=y
+ CONFIG_NET_VENDOR_OKI=y
+ # CONFIG_ETHOC is not set
+ CONFIG_NET_VENDOR_PACKET_ENGINES=y
+@@ -2536,7 +2536,7 @@
+ # CONFIG_I2C_ISCH is not set
+ # CONFIG_I2C_ISMT is not set
+ # CONFIG_I2C_PIIX4 is not set
+-# CONFIG_I2C_NFORCE2 is not set
++CONFIG_I2C_NFORCE2=y
+ # CONFIG_I2C_NVIDIA_GPU is not set
+ # CONFIG_I2C_SIS5595 is not set
+ # CONFIG_I2C_SIS630 is not set
+@@ -2856,7 +2856,7 @@
+ # CONFIG_HP_WATCHDOG is not set
+ # CONFIG_SC1200_WDT is not set
+ # CONFIG_PC87413_WDT is not set
+-# CONFIG_NV_TCO is not set
++CONFIG_NV_TCO=y
+ # CONFIG_60XX_WDT is not set
+ # CONFIG_CPU5_WDT is not set
+ # CONFIG_SMSC_SCH311X_WDT is not set
