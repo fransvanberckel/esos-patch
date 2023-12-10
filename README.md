@@ -23,10 +23,10 @@ Wanna know more about ESOS (Enterprise Storage OS), you should checkout there [w
 To build the ESOS kernel with my linux-5.4.229.mcp55.config_patch do.
 
 ```
-$ wget https://raw.githubusercontent.com/fransvanberckel/esos-patch/master/linux-builder.sh
-$ nano ./linux-builder.sh
-$ chmod +x linux-builder.sh
-$ ./linux-builder.sh
+$ wget https://raw.githubusercontent.com/fransvanberckel/esos-patch/master/setup-linux-builder.sh
+$ nano ./setup-linux-builder.sh
+$ chmod +x setup-linux-builder.sh
+$ ./setup-linux-builder.sh
 ```
 
 ## How to Contribute by Forking and Submitting a Pull Request
