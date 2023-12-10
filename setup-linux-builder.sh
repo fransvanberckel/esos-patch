@@ -68,7 +68,7 @@ else \
 fi;
 
 if cd $esos_repo ; then \
-   git checkout $esos_branche misc/$kernel_name.* && mv misc/$kernel_name.* ../$builder_repo && cd ..; \
+   git checkout $esos_branche misc/$kernel_name.* && cp misc/$kernel_name.* ../$builder_repo && cd ..; \
 else \
    echo "No $esos_repo checkout possible, aborting."; \
    exit 1;
@@ -81,7 +81,7 @@ else \
 fi;
 
 if cd $patch_repo ; then \
-   git checkout $patch_branche misc/$kernel_name.* && mv misc/$kernel_name.* ../$builder_repo && cd ..; \
+   git checkout $patch_branche misc/$kernel_name.* && cp misc/$kernel_name.* ../$builder_repo && cd ..; \
 else \
    echo "No $patch_repo checkout possible, aborting."; \
    exit 1;
