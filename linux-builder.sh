@@ -95,12 +95,9 @@ if cd $builder_repo ; then \
       echo "found $kernel_name.$patch_name.config_patch"
       $patch_cmd $kernel_name.config < $kernel_name.$patch_name.config_patch
       $python3_cmd ./linux-builder --verbose --menuconfig --version $kernel_version --config $kernel_name.config
-      echo -e "\nStart building with ./linux-builder --verbose --jobs $cpu_info --version $kernel_version --config $kernel_name.config --patch $kernel_name.patch --target bzImage"
+      echo -e "\nStart with ... \ncd $target_dir/$builder_repo \n./linux-builder --verbose --jobs $cpu_info --version $kernel_version --config $kernel_name.config --patch $kernel_name.patch --target bzImage"
    fi
 else \
    echo "No $builder_repo directory exists, aborting."; \
    exit 1;
 fi;
-
-cd $builder_repo
-
