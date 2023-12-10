@@ -16,6 +16,7 @@ total 8
 -rw-r--r-- 1 frans frans 1802 Dec 10 06:55 linux-5.4.229.mcp55.config_patch
 -rw-r--r-- 1 frans frans  959 Dec 10 06:55 linux-5.4.229.p5k.config_patch
 ```
+Wanna know more about ESOS (Enterprise Storage OS), you should checkout there [website](https://www.esos-project.com/)
 
 ## Usage
 
